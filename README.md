@@ -65,6 +65,7 @@ Candidate Profile / Career Policy
 
 | Skill | Purpose |
 |---|---|
+| `candidateos` | Orchestrate the end-to-end workflow and route work across the specialized skills. |
 | `discover-jobs` | Search for jobs and normalize raw listings into comparable structured records. |
 | `research-company` | Build a company/product/role dossier focused on durable differentiation and hiring reality. |
 | `evaluate-fit` | Produce an evidence-backed apply/reject decision, blockers, risks, and narrative angle. |
@@ -72,7 +73,7 @@ Candidate Profile / Career Policy
 | `draft-outreach` | Draft concise recruiter/mentor outreach grounded in a specific role and company thesis. |
 | `pipeline-review` | Review all active applications, outcomes, and repeated evidence; propose policy updates conservatively. |
 
-Each skill is standalone and lives in `skills/<name>/SKILL.md`.
+The six specialized skills can be used standalone. The `candidateos` skill orchestrates them as one workflow.
 
 ## Core decision model
 
@@ -122,6 +123,7 @@ candidateos-skills/
 ├── README.md
 ├── LICENSE
 ├── skills/
+│   ├── candidateos/
 │   ├── discover-jobs/
 │   ├── research-company/
 │   ├── evaluate-fit/
