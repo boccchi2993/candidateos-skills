@@ -1,0 +1,13 @@
+{
+  "decision": "do_not_apply",
+  "fit_score_range": [0.35, 0.5],
+  "strong_evidence": ["Candidate has relevant Agent workflow experience."],
+  "weak_or_missing_evidence": ["Role centers on distributed training and CUDA optimization."],
+  "hard_blockers": ["Posting explicitly requires 985/211/QS100 undergraduate background."],
+  "interview_risks": ["Core interview content is outside the candidate's strongest evidence."],
+  "career_value": "Low relative to Agent systems/product path.",
+  "opportunity_cost": "High customization effort with low expected screening probability.",
+  "narrative_angle": "None recommended.",
+  "resume_changes": [],
+  "why_not_apply": "Explicit eligibility blocker plus weak alignment with the candidate's long-term Agent systems direction."
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CandidateOS Fit Report",
+  "type": "object",
+  "required": ["decision", "strong_evidence", "weak_or_missing_evidence", "hard_blockers", "interview_risks", "narrative_angle"],
+  "properties": {
+    "decision": {
+      "enum": ["strong_apply", "apply", "low_cost_apply", "watch", "do_not_apply"]
+    },
+    "fit_score_range": {
+      "type": ["array", "null"],
+      "prefixItems": [{"type": "number", "minimum": 0, "maximum": 1}, {"type": "number", "minimum": 0, "maximum": 1}],
+      "items": false
+    },
+    "strong_evidence": {"type": "array", "items": {"type": "string"}},
+    "weak_or_missing_evidence": {"type": "array", "items": {"type": "string"}},
+    "hard_blockers": {"type": "array", "items": {"type": "string"}},
+    "interview_risks": {"type": "array", "items": {"type": "string"}},
+    "career_value": {"type": ["string", "null"]},
+    "opportunity_cost": {"type": ["string", "null"]},
+    "narrative_angle": {"type": "string"},
+    "resume_changes": {"type": "array", "items": {"type": "string"}},
+    "why_not_apply": {"type": ["string", "null"]},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

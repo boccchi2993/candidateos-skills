@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CandidateOS Application",
+  "type": "object",
+  "required": ["company", "role", "status"],
+  "properties": {
+    "company": {"type": "string"},
+    "role": {"type": "string"},
+    "status": {
+      "enum": ["discovered", "researched", "shortlisted", "prepared", "applied", "recruiter_reply", "interview_scheduled", "interviewing", "waiting", "rejected", "offer", "withdrawn"]
+    },
+    "applied_at": {"type": ["string", "null"]},
+    "last_updated_at": {"type": ["string", "null"]},
+    "resume_variant": {"type": ["string", "null"]},
+    "outreach_channel": {"type": ["string", "null"]},
+    "contact": {"type": ["string", "null"]},
+    "next_action": {"type": ["string", "null"]},
+    "notes": {"type": "array", "items": {"type": "string"}},
+    "outcomes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

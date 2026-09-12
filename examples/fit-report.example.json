@@ -1,0 +1,26 @@
+{
+  "decision": "strong_apply",
+  "fit_score_range": [0.82, 0.9],
+  "strong_evidence": [
+    "Candidate built a multi-Agent generate-review-repair workflow with structured validation and regression tests.",
+    "Candidate built a personal Agent runtime separating working, operational, and policy memory.",
+    "Candidate has an inspectable harness/control-plane project for coding Agents."
+  ],
+  "weak_or_missing_evidence": [
+    "No production benchmark platform ownership.",
+    "Limited direct model post-training experience."
+  ],
+  "hard_blockers": [],
+  "interview_risks": [
+    "Expect deep questions on coding ownership and debugging when AI performs most implementation.",
+    "Benchmark methodology knowledge may be probed."
+  ],
+  "career_value": "Directly strengthens an Agent systems / evaluation trajectory.",
+  "opportunity_cost": "Medium customization effort; high strategic value.",
+  "narrative_angle": "Does not collapse every Agent failure into model weakness; decomposes failures across model, context, tool, parser, state, and verifier.",
+  "resume_changes": [
+    "Move Agent evaluation evidence to the top.",
+    "Use JD terms such as trajectory evaluation and badcase analysis only where supported."
+  ],
+  "why_not_apply": null
+}

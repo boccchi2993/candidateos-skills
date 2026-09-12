@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CandidateOS Job",
+  "type": "object",
+  "required": ["company", "role", "source_url"],
+  "properties": {
+    "company": {"type": "string"},
+    "team": {"type": ["string", "null"]},
+    "role": {"type": "string"},
+    "location": {"type": ["string", "null"]},
+    "employment_type": {"type": ["string", "null"]},
+    "published_at": {"type": ["string", "null"]},
+    "freshness_confidence": {"enum": ["high", "medium", "low", null]},
+    "summary": {"type": ["string", "null"]},
+    "requirements": {"type": "array", "items": {"type": "string"}},
+    "role_tags": {"type": "array", "items": {"type": "string"}},
+    "contact": {
+      "type": ["object", "null"],
+      "properties": {
+        "email": {"type": ["string", "null"]},
+        "link": {"type": ["string", "null"]},
+        "wechat": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "source_url": {"type": "string"},
+    "alternate_sources": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}
